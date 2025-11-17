@@ -31,21 +31,21 @@ The high-pass filter is a simple **first-order** one (6 dB/oct) using a **1.5 µ
 - **Power handling:** 10 W RMS
 - **Crossover frequency:** 7.3 kHz
 - **Tweeter attenuation:** -10.2 dB
-- **Nominal impedance:** 8Ω _(somewhat lower at very high frequencies, around **5.2 Ω**)_
+- **Nominal impedance:** 8Ω _(somewhat lower at very high frequencies)_
 
 ### Computing alternative values
 
-`L1` = 1/(2π·f·Zw)
+$L_1 = \frac{1}{2π·f·Z_w}$
 
-`R2` = Zt·(At-1)
+$R_2 = Z_t·(A_t-1)$
 
-Zn = `R1` || (Zt+`R2`)
+$\frac{1}{Z_n} = \frac{1}{R_1} + \frac{1}{Z_t+R_2}$
 
-`C1` = 1/(2π·f·Zn)
+$C_1 = \frac{1}{2π·f·Z_n}$
 
 where:
-- **f**: desired crossover frequency
-- **Zw**: nominal woofer impedance
-- **Zt**: nominal tweeter impedance
-- **Zn**: desired tweeter network impedance
-- **At**: attenuation factor (linear)
+- **$f$:** desired crossover frequency (Hz)
+- **$Z_w$:** nominal woofer impedance (Ω)
+- **$Z_t$:** nominal tweeter impedance (Ω)
+- **$Z_n$:** desired tweeter network impedance (Ω)
+- **$A_t$:** attenuation factor (linear, e.g.: $2$ for -6 dB)
