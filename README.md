@@ -39,7 +39,7 @@ $L_1 = \frac{1}{2π·f·Z_w}$
 
 $R_2 = Z_t·(A_t-1)$
 
-$\frac{1}{Z_n} = \frac{1}{R_1} + \frac{1}{Z_t+R_2}$
+$\frac{1}{Z_n} = \frac{1}{R_1} + \frac{1}{Z_t+R_2}$, thus: $R_1 = \frac{Z_n(R_2+Z_t)}{R_2+Z_t - Z_n}$
 
 $C_1 = \frac{1}{2π·f·Z_n}$
 
@@ -47,5 +47,5 @@ where:
 - **$f$:** desired crossover frequency (Hz)
 - **$Z_w$:** nominal woofer impedance (Ω)
 - **$Z_t$:** nominal tweeter impedance (Ω)
-- **$Z_n$:** desired tweeter network impedance (Ω)
+- **$Z_n$:** desired tweeter network impedance, _less or equal than_ $Z_t+R_2$ (Ω)
 - **$A_t$:** attenuation factor (linear, e.g.: $2$ for -6 dB)
